@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-        Scanner scan=new Scanner(System.in);
-        byte choice=4;
-        while(choice != 0) {
+        Scanner scan = new Scanner(System.in);
+        byte choice = 4;
+        while (choice != 0) {
             System.out.println("Menu");
             System.out.println("1. Draw the triangle");
             System.out.println("2. Draw the square");
@@ -15,21 +15,18 @@ public class main {
             switch (choice) {
                 case 1:
                     System.out.println("Draw the triangle");
-                    System.out.println("******");
-                    System.out.println("*****");
-                    System.out.println("****");
-                    System.out.println("***");
-                    System.out.println("**");
-                    System.out.println("*");
+                    for (int i = 0; i < 6; i++) {
+                        for (int j = i; j < 6; j++) {
+                            System.out.print("*");
+                        }
+                        System.out.println();
+                    }
                     break;
                 case 2:
                     System.out.println("Draw the square");
-                    System.out.println("* * * * * *");
-                    System.out.println("* * * * * *");
-                    System.out.println("* * * * * *");
-                    System.out.println("* * * * * *");
-                    System.out.println("* * * * * *");
-                    System.out.println("* * * * * *");
+                    for (int i = 0; i < 7; i++) {
+                        System.out.println("* * * * * *");
+                    }
                     break;
                 case 3:
                     System.out.println("Draw the rectangle");
