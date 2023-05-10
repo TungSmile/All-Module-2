@@ -1,4 +1,6 @@
+
 import java.util.Arrays;
+
 
 public class concatJava {
     public static void main(String[] args) {

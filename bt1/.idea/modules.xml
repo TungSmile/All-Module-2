@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/bt1.iml" filepath="$PROJECT_DIR$/.idea/bt1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changemoney/changemoney.iml" filepath="$PROJECT_DIR$/changemoney/changemoney.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dayOfMonth/dayOfMonth.iml" filepath="$PROJECT_DIR$/dayOfMonth/dayOfMonth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geeting/geeting.iml" filepath="$PROJECT_DIR$/geeting/geeting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ibm/ibm.iml" filepath="$PROJECT_DIR$/ibm/ibm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lead-year-calculation/lead-year-calculation.iml" filepath="$PROJECT_DIR$/lead-year-calculation/lead-year-calculation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liner-equation-resovler/liner-equation-resovler.iml" filepath="$PROJECT_DIR$/liner-equation-resovler/liner-equation-resovler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/operator-expression/operator-expression.iml" filepath="$PROJECT_DIR$/operator-expression/operator-expression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/read-number/read-number.iml" filepath="$PROJECT_DIR$/read-number/read-number.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/variable-dataType/variable-dataType.iml" filepath="$PROJECT_DIR$/variable-dataType/variable-dataType.iml" />
+    </modules>
+  </component>
+</project>
