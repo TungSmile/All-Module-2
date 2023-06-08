@@ -1,3 +1,5 @@
+package quanLyHS;
+
 public class Main {
     // thêm
     // sửa

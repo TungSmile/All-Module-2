@@ -1,3 +1,5 @@
+package quanLyHS;
+
 public class Studen {
     int id;
     String name;

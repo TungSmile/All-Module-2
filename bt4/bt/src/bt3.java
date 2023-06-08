@@ -64,6 +64,7 @@ class Fan {
         this.radius = radius;
     }
 
+
     public void setSpeed(int speed) {
         if (speed > 0 && speed < 4) {
             this.speed = speed;

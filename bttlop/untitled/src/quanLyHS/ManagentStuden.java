@@ -1,3 +1,5 @@
+package quanLyHS;
+
 import java.util.Scanner;
 
 public class ManagentStuden {
