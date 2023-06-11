@@ -1,2 +1,10 @@
-package PACKAGE_NAME;public class NumberGenerator {
+public class NumberGenerator implements Runnable {
+
+
+    @Override
+    public void run() {
+
+
+
+    }
 }

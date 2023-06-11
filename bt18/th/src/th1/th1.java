@@ -1,3 +1,5 @@
+package th1;
+
 public class th1 {
     public static void main(String[] args) {
         final Table obj = new Table();// tao object duy nhat

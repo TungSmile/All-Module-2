@@ -13,17 +13,15 @@ public class Bill implements Serializable {
     private String idClient;
     private ArrayList<Books> listBook ;
     private double total=0.0;
-    static int count;
 
-    public Bill( String idStaff, String idClient, ArrayList<Books> listBook) {
+    public Bill( String idStaff, String idClient, ArrayList<Books> listBook,int id) {
         this.currentTime = LocalDateTime.now();
         this.idStaff = idStaff;
         this.idClient = idClient;
         this.listBook = listBook;
         for (Books book:listBook){
         this.total+= book.getCost();}
-        count++;
-        this.id=count;
+        this.id=id;
     }
 
 
@@ -76,13 +74,7 @@ public class Bill implements Serializable {
         this.id = id;
     }
 
-    public static int getCount() {
-        return count;
-    }
 
-    public static void setCount(int count) {
-        Bill.count = count;
-    }
 
     @Override
     public String toString() {

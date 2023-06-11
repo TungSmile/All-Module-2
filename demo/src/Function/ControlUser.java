@@ -37,7 +37,6 @@ public class ControlUser {
     public boolean checkId(String o) {
         for (User user : list) {
             if (user.getId().equals(o)) {
-                System.out.println(menu.duplicape("ID"));
                 return false;
             }
         }
@@ -48,7 +47,7 @@ public class ControlUser {
     public boolean checkPhone(String o) {
         for (User user : list) {
             if (user.getEmail().equals(o)) {
-                System.out.println(menu.duplicape("phone"));
+
                 return false;
             }
         }
@@ -71,10 +70,10 @@ public class ControlUser {
         } else if (user1 instanceof Client) {
             rankUser1 = 3;
         }
-        return rankUser < rankUser1;
+        return rankUser <= rankUser1;
     }
 
-    public int checkAuthority(User user) {//rút gọn xem đc ko
+    public int checkAuthority(User user) {
         if (user instanceof Manager) return 1;
         if (user instanceof Staff) return 2;
         if (user instanceof Client) return 3;
@@ -110,25 +109,29 @@ public class ControlUser {
     }
 
     public User createUser() { // if cuối đang ảo ma manager mà ko tạo đc staff
-        String id = data.inputId();
-        String pass = data.inputPass();
-        String name = data.inputName();
-        String phone = data.inputPhone();
-        String email = data.inputEmail();
-        if (id != null && pass != null && name != null && phone != null && email != null && checkId(id) && checkPhone(phone)) {
-            if (getUser() == null) {
-                User user = new Client(id, pass, name, phone, email, data.inputRank(0), 0);
-                add(user);
-                return user;
+        try {
+            String id = data.inputId();
+            String pass = data.inputPass();
+            String name = data.inputName();
+            String phone = data.inputPhone();
+            String email = data.inputEmail();
+            if (id != null && pass != null && name != null && phone != null && email != null && checkId(id) && checkPhone(phone)) {
+                if (getUser() == null) {
+                    User user = new Client(id, pass, name, phone, email, data.inputRank(0), 0);
+                    add(user);
+                    return user;
+                }
+                if (checkStaff(getUser()) || checkManager(getUser())) {
+                    User user = new Client(id, pass, name, phone, email);
+                    return user;
+                }
+                if (checkManager(getUser())) {
+                    User user = new Staff(id, pass, name, phone, email);
+                    return user;
+                }
             }
-            if (checkStaff(getUser()) || checkManager(getUser())) {
-                User user = new Client(id, pass, name, phone, email);
-                return user;
-            }
-            if (checkManager(getUser())) {
-                User user = new Staff(id, pass, name, phone, email);
-                return user;
-            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         System.out.println(menu.userNoBrain());
         return null;
@@ -137,6 +140,7 @@ public class ControlUser {
     public User createClient(User user) { // xuất hiện null khi óc chó điền lỗi
         Client temp = (Client) user;
         if (checkAuthority(getUser(), user) || checkAuthority(user) == 4) {
+            System.out.println("Điểm PointBonus");
             int numberPoint = data.inputNumber();
             temp.setPointBonus(numberPoint);
             temp.setRank(data.inputRank(numberPoint));
@@ -150,6 +154,17 @@ public class ControlUser {
 
         System.out.println(menu.magicHappen());
         return null;
+    }
+    public void createStaff(){
+        String id = data.inputId();
+        String pass = data.inputPass();
+        String name = data.inputName();
+        String phone = data.inputPhone();
+        String email = data.inputEmail();
+        int hour=data.inputHourWork();
+        double rating=data.inputRating();
+        double salary=data.inputSalary();
+        add(new Staff(id,pass,name,phone,email,rating,salary,hour));
     }
 
     public Staff createStaff(User user) {
@@ -174,31 +189,31 @@ public class ControlUser {
             switch (number) {
                 case 1:// đổi pass
                     System.out.println(editPass(o));
-                    break;
+                    return;
                 case 2:// đổi email
                     System.out.println(editEmail(o));
-                    break;
+                    return;
                 case 3:// đổi tên
                     System.out.println(editName(o));
-                    break;
+                    return;
                 case 4:// đổi hạng  fix
                     if (checkStaff(o)) {
                         System.out.println(editRating(o));
-                        break;
+                        return;
                     }
                     editRank(o);
-                    break;
+                    return;
                 case 5:// sửa lương
                     if (checkStaff(o)) {
                         System.out.println(editSalary(o));
-                        break;
+                        return;
                     }
                     System.out.println(editPointBonus(o));
-                    break;
+                    return;
                 case 6: // sửa giờ làm
                     if (checkStaff(o)) {
                         System.out.println(editHourWork(o));
-                        break;
+                        return;
                     }
                     return;
                 case 7:
@@ -206,7 +221,7 @@ public class ControlUser {
                         return;
                     }
                     System.out.println(menu.userNoBrain());
-                    break;
+                    return;
                 default:
                     System.out.println(menu.userNoBrain());
             }
@@ -217,7 +232,6 @@ public class ControlUser {
     public void delete(User o) {
         if (checkAuthority(getUser(), o)) {
             this.list.remove(o);
-            System.out.println("done del");
         } else System.out.println(menu.notAuthority());
     }
 
@@ -269,12 +283,14 @@ public class ControlUser {
         return null;
     }
 
-    public void login() {
-        User user = findById();
-        User user1 = findByPass();
-        if (user.equals(user1)) {
+    public User login() {
+       while (true) {
+           User user = findById();
+           String pass= data.inputPass();
+        if (user != null && user.getPass().equals(pass)) {
             setUser(user);
-        }
+            return user;
+        }else {System.out.println(menu.brainFish());}}
     }
 
     public void logout() {
@@ -287,7 +303,7 @@ public class ControlUser {
         String head = "-----------List-Client-------------\n";
         StringBuilder client = new StringBuilder("List Client \n");
         for (User user : list) {
-            if (checkAuthority(getUser(), user)) {
+            if (checkAuthority(user)==3) {
                 client.append(user);
             }
         }
@@ -299,7 +315,7 @@ public class ControlUser {
         String head = "-----------List-Staff-------------\n";
         StringBuilder staff = new StringBuilder("List Staff \n");
         for (User user : list) {
-            if (checkAuthority(getUser(), user)) {
+            if (checkAuthority( user)==2) {
                 staff.append(user);
             }
         }
@@ -310,14 +326,14 @@ public class ControlUser {
         String pass = data.inputPass();
         if (checkAuthority(getUser(), user) && pass != null) {
             user.setPass(pass);
-            return menu.done();
+            return "Đổi Pass thành công";
         }
         return menu.notAuthority();
     }
 
     public String editEmail(User user) {
         String email = data.inputEmail();
-        if (checkAuthority(getUser(), user) && email != null) {
+        if (checkAuthority(getUser(), user) ) {
             user.setPass(email);
             return menu.done();
         }
@@ -326,7 +342,7 @@ public class ControlUser {
 
     public String editName(User user) {
         String name = data.inputName();
-        if (checkAuthority(getUser(), user) && name != null) {
+        if (checkAuthority(getUser(), user) ) {
             user.setName(name);
             return menu.done();
         }

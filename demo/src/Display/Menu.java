@@ -5,30 +5,30 @@ public class Menu {
 
     public String showMenuBegin() {
         return "-----------------Menu-------------\n"
-                + "           1.Đăng nhập            \n"
-                + "           2.Đăng ký            \n"
-                + "           3.Thoát            \n";
+                + "           1.Đăng nhập         \n"
+                + "           2.Đăng ký           \n"
+                + "           3.Thoát             \n";
     }
     public String showTypeSearch() {
         return "--------------Chọn Loại-------------\n"
-                + "           1.ID                 \n"
-                + "           2.Email            \n"
-                + "           3.Phone            \n";
+                + "           1.ID                  \n"
+                + "           2.Email               \n"
+                + "           3.Phone               \n";
     }
 
     public String menuFunctionClient(String idname) {
         return "--------------" + idname + "------------------\n"
-                + "          1.Thông tin tài khoản           \n"
-                + "          2.Sách Có Ở Tiệm                 \n"
-                + "          3.Mua Sách Online               \n"
-                + "          4.Đăng xuất                        \n";
+                + "          1.Thông tin tài khoản            \n"
+                + "          2.Sách Đã Mua                    \n"
+                + "          3.Mua Sách Online                \n"
+                + "          4.Đăng xuất                      \n";
     }
     public String menuFunctionStaff(String idname) {
         return "--------------" + idname + "------------------\n"
                 + "          1.Thông tin tài khoản           \n"
                 + "          2.Quản lý tài khoản khách       \n"
                 + "          3.Quản lý Bill                  \n"
-                + "          4.Đăng xuất                          \n";
+                + "          4.Đăng xuất                     \n";
     }
     public String menuFunctionManager(String idname) {
         return "--------------" + idname + "------------------\n"
@@ -55,68 +55,60 @@ public class Menu {
                 +"          2.Tạo "+type+"                   \n"
                 +"          3.Sửa thông tin "+type+"         \n"
                 +"          4.Xóa  "+type+"                  \n"
-                + "         5.Thoát                          \n";
+                +"          5.Thoát                          \n";
     }
 
 public String menuEditClient(String idname){
     return "--------------" + idname + "------------------\n"
             +"          1.Đổi Mật Khẩu                   \n"
             +"          2.Đổi Email                      \n"
-            +"          3.Đổi Tên                      \n"
+            +"          3.Đổi Tên                        \n"
             +"          4.Sửa Hạng                       \n"
             +"          5.Sửa Điểm Thưởng                \n"
-            + "         6.Thoát                          \n"
-            + "         Tìm bằng ID                         \n";
+            +"         6.Thoát                           \n"
+            +"         Tìm bằng ID                       \n";
 }
-    public String menuEditStaff(String idname){
+    public static String menuEditStaff(String idname){
         return "--------------" + idname + "------------------\n"
                 +"          1.Đổi Mật Khẩu                   \n"
                 +"          2.Đổi Email                      \n"
-                +"          3.Đổi Tên                      \n"
+                +"          3.Đổi Tên                        \n"
                 +"          4.Sửa Đánh Giá                   \n"
                 +"          5.Sửa Lương                      \n"
-                + "         6.Sửa Giờ Làm                    \n"
-                + "         7.Thoát                          \n"
-                + "         Tìm bằng ID                          \n";
+                +"          6.Sửa Giờ Làm                    \n"
+                +"          7.Thoát                          \n"
+                +"          Tìm bằng ID                      \n";
     }
     public String menuEditBook(String idname){
         return "--------------" + idname + "------------------\n"
-                +"          1.Sửa Tên Sách                   \n"
-                +"          2.Sửa Miêu Tả                    \n"
-                +"          3.Sửa Giá                        \n"
-                +"          4.Sửa Khuyến Mại                 \n"
-                +"          5.Bổ Sung Sách                   \n"
-                + "         6.Thoát                          \n";
+                +"          1.Hiển thị mục sách               \n"
+                +"          2.Sửa Tên Sách                    \n"
+                +"          3.Sửa Miêu Tả                     \n"
+                +"          4.Sửa Giá                         \n"
+                +"          5.Thoát                           \n";
     }
     public String menuEditBill(String idname){
         return "--------------" + idname + "------------------\n"
-                +"          1.Sửa Tên Sách                   \n"
-                +"          2.Sửa Miêu Tả                    \n"
-                +"          3.Sửa Giá                        \n"
-                +"          4.Sửa Khuyến Mại                 \n"
-                +"          5.Bổ Sung Sách                   \n"
-                + "         6.Thoát                          \n";
+                +"          1.Hiển thị danh sách bill         \n"
+                +"          2.Sửa Tên Khách                   \n"
+                +"          3.Sửa Tên Nhân Viên               \n"
+                +"          4.Sửa Khuyến Mại                  \n"
+                +"          5.Thoát                           \n";
     }
 
-public String findID(){
-        return "Tìm bằng ID";
-}
+
     public String inputFullName() {
-        return " Tên : ";
+        return "Tên : ";
     }
-
     public String inputID() {
         return "ID : ";
     }
-
     public String inputPass() {
         return "PassWord : ";
     }
-
     public String inputPhone() {
         return "Số Điện Thoại : ";
     }
-
     public String inputEmail() {
         return "Email : ";
     }
@@ -127,30 +119,23 @@ public String findID(){
         return "Hệ Số Đánh Giá: ";
     }
     public String inputHourWork() {
-        return " Số Giờ Làm: ";
+        return "Số Giờ Làm: ";
     }
     public String inputSalary() {
-        return " Lương : ";
+        return "Lương : ";
     }
     public String inputRealNumber(){return "Nhập số thực ";}
     public String inputDescribe() {
-        return " Miêu tả: ";
+        return "Miêu tả: ";
     }
-
     public String inputNumber() {
         return "Nhập số : ";
-    }
-    public String validateFail(){
-        return " Sai Định Dạng ";
-    }
-    public String duplicape(String name){
-        return " Trùng "+name;
     }
     public String magicHappen(){
         return "dính bug ";
     }
     public String notAuthority(){
-        return " bạn tuổi gì mà thao tác";
+        return " Không đủ cấp để thao tác";
     }
     public String userNoBrain(){
         return "Người dùng nên có tư duy";

@@ -2,34 +2,20 @@ package Module;
 
 public class Staff extends User {
     private static final long serialVersionUID = 1L;
-    private static int count;
-    private double rating;
-    private double salary;
-    private int hourWork;
+    private double rating=0.0;
+    private double salary=0.0;
+    private int hourWork=0;
 
     public Staff(String id, String pass, String name, String phone, String email, double rate, double salary, int hourWork) {
         super(id, pass, name, phone, email);
         this.rating = rate;
         this.salary = salary;
         this.hourWork = hourWork;
-        count++;
+
     }
 
     public Staff(String id, String pass, String name, String phone, String email) {
         super(id, pass, name, phone, email);
-        count++;
-    }
-
-    public Staff() {
-        count++;
-    }
-
-    public static int getCount() {
-        return count;
-    }
-
-    public static void setCount(int count) {
-        Staff.count = count;
     }
 
     public double getRating() {
@@ -58,7 +44,7 @@ public class Staff extends User {
 
     @Override
     public String toString() {
-        return super.toString()+"    Rate : "+this.rating +"    HourWork : "+this.hourWork+"    Salary : "+this.salary+"\n"
+        return super.toString()+"    Rate : "+getRating() +"    HourWork : "+getHourWork()+"    Salary : "+getSalary()+"\n"
                 +"----------------------------------------------------------------------------------------------------\n";
     }
 }

@@ -1,0 +1,6 @@
+6,threee,15,Nam,ausd,9.7
+4,two,15,Nam,aasd,7.7
+5,threee,15,Nam,afsd,7.0
+0,one,17,Nam,qwe1,4.7
+2,threee,15,Nam,asd,4.0
+1,two,15,Nam,asd,3.0

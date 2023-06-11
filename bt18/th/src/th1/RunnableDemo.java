@@ -1,3 +1,5 @@
+package th1;
+
 public class RunnableDemo implements Runnable {
     private Thread t;
     private final String threadName;

@@ -1,27 +1,31 @@
-public class Product {
-    private String codeProduct;
+import java.util.Comparator;
+
+public class Product  {
+    private int codeProduct;
     private String name;
     private int price;
     static int count = 0;
     private String describe;
+    private int quality = 0;
 
-    public Product() {
+    Product() {
         count++;
     }
 
-    public Product(String codeProduct, String name, int price, String describe) {
+    public Product(int codeProduct, String name, int price, String describe, int quality) {
         this.codeProduct = codeProduct;
         this.name = name;
         this.price = price;
         this.describe = describe;
+        this.quality = quality;
         count++;
     }
 
-    public String getCodeProduct() {
+    public int getCodeProduct() {
         return codeProduct;
     }
 
-    public void setCodeProduct(String codeProduct) {
+    public void setCodeProduct(int codeProduct) {
         this.codeProduct = codeProduct;
     }
 
@@ -56,4 +60,23 @@ public class Product {
     public void setDes(String der) {
         this.describe = der;
     }
+
+    public String getDescribe() {
+        return describe;
+    }
+
+    public int getQuality() {
+        return quality;
+    }
+
+    public void setDescribe(String describe) {
+        this.describe = describe;
+    }
+
+    public void setQuality(int quality) {
+        this.quality = quality;
+    }
+
+
+
 }

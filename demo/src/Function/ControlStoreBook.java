@@ -11,7 +11,7 @@ public class ControlStoreBook {
     public ArrayList<Books> listBook = new ArrayList<Books>();
     public ArrayList<Bill> listBill = new ArrayList<Bill>();
 
-    private double balance=0.0;
+    private double balance = 0.0;
 
     public ControlStoreBook(ArrayList<Books> listBook, ArrayList<Bill> listBill) {
         this.data = new CheckInputSystem();
@@ -22,12 +22,6 @@ public class ControlStoreBook {
     }
 
     public ControlStoreBook() {// để tạm
-        this.data = new CheckInputSystem();
-        this.menu = new Menu();
-    }
-
-    public ControlStoreBook(ArrayList<Books> books) {
-        this.listBook = books;
         this.data = new CheckInputSystem();
         this.menu = new Menu();
     }
@@ -56,10 +50,10 @@ public class ControlStoreBook {
         this.balance = balance;
     }
 
-    public Books findBookByID() {
-        int idBook = data.inputNumber();
+    public Books findBookByID(int number) {
         for (Books books : getListBook()) {
-            if (books.getId() == idBook) {
+            if (books.getId() == number) {
+                System.out.println("Sách đã vào bill");
                 return books;
             }
         }
@@ -67,35 +61,38 @@ public class ControlStoreBook {
     }
 
     public static String showBook(ArrayList<Books> listBook) {
-        String listShowBook = "-------------Danh Mục Sách------------\n";
+        String listShowBook = "\n---Danh Mục Sách---\n";
         for (Books books : listBook) {
             listShowBook += books.toString();
         }
         return listShowBook;
     }
 
-    public Books createBook(int number) {
-        return new Books(data.inputName(), data.inputinputDescribe(), data.inputRealNumber());
-        // return null;
+    public static String showBill(ArrayList<Bill> listBill) {
+        String listShowBill = "----------------Danh Sách Bill-----------\n";
+        for (Bill bill : listBill) {
+            listShowBill += bill.toString();
+        }
+        return listShowBill;
     }
 
-    public Bill createBill(String nameStaff, String nameClient) {
+    public Books createBook() {
+        return new Books(data.inputName(), data.inputinputDescribe(), data.inputRealNumber());
+    }
+
+    public Bill createBill(String nameStaff, User client) {
+        String nameClient = client.getName();
         ArrayList<Books> list = new ArrayList<>();
         System.out.println(showBook(getListBook()));
         while (true) {
             System.out.println("Nhập 0 để thoát");
             int numberIdBook = data.inputNumber();
             if (numberIdBook > 0) {
-                for (Books books : getListBook()) {
-                    if (numberIdBook == books.getId()) {
-                        list.add(books);
-                    } else {System.out.println("Méo có ???");}
-                }
+                list.add(findBookByID(numberIdBook));
             } else if (numberIdBook == 0) {
-                Bill temp=new Bill(nameStaff, nameClient, list);
-                double balance=getBalance();
-                 setBalance(balance + temp.getTotal());
-                return temp;
+                Client temp = (Client) client;
+                temp.setListBook(list);
+                return new Bill(nameStaff, nameClient, list, listBill.size());
             } else System.out.println(menu.userNoBrain());
         }
     }
@@ -107,6 +104,7 @@ public class ControlStoreBook {
         }
         if (o instanceof Bill) {
             Bill temp = (Bill) o;
+            setBalance(getBalance() + temp.getTotal());
             listBill.add(temp);
         }
     }
@@ -115,9 +113,33 @@ public class ControlStoreBook {
     public void delete(Object o) {
         if (o instanceof Books)
             listBook.remove(o);
-        if (o instanceof Bill)
+        if (o instanceof Bill) {
+            Bill temp = (Bill) o;
+            setBalance(getBalance() - temp.getTotal());
             listBill.remove(o);
+        }
     }
 
+    public Bill buyOnline(Client client) {
+        double balance = client.getPointBonus();
+        String nameClient = client.getId();
+        ArrayList<Books> list = new ArrayList<>();
+        System.out.println(showBook(getListBook()));
+        while (true) {
+            System.out.println("Input Number 0 to Exit");
+            int numberIdBook = data.inputNumber();
+            if (numberIdBook > 0) {
+                Books temp = findBookByID(numberIdBook);
+                if (balance > temp.getCost()) {
+                    balance -= temp.getCost();
+                    list.add(temp);
+                }
+                System.out.println(" Not Enough Money");
+            } else if (numberIdBook == 0) {
+                client.setListBook(list);
+                return new Bill("OnLine", nameClient, list, listBill.size());
+            } else System.out.println(menu.userNoBrain());
+        }
 
+    }
 }

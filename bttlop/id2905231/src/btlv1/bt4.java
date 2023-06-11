@@ -1,5 +1,7 @@
+package btlv1;
+
 import java.util.Scanner;
-import java.util.Arrays;
+
 
 public class bt4 {
     public static void main(String[] args) {
@@ -13,7 +15,7 @@ public class bt4 {
         for (int i = 1; i < a.length-1; i++) {
             int temp = Integer.parseInt(a[i]);
             int temp1 = Integer.parseInt(a[i - 1]);
-            int sum = Integer.parseInt(a[i+1]);;
+            int sum = Integer.parseInt(a[i+1]);
             if (temp+temp1!=sum){
                 return "Méo";
             }

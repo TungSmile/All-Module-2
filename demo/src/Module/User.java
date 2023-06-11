@@ -10,7 +10,6 @@ public class User implements Serializable {
     private String name;
     private String phone;
     private String email;
-    private static int count;
 
     public User(String id, String pass, String name, String phone, String email) {
         this.id = id;
@@ -18,11 +17,11 @@ public class User implements Serializable {
         this.name = name;
         this.phone = phone;
         this.email = email;
-        count++;
+
     }
 
     public User() {
-        count++;
+
     }
 
     public String getId() {
@@ -65,13 +64,6 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public static int getCount() {
-        return count;
-    }
-
-    public static void setCount(int count) {
-        User.count = count;
-    }
 
     @Override
     public String toString() {

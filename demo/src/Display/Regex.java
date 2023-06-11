@@ -4,11 +4,11 @@ import java.util.regex.Pattern;
 
 
 public class Regex {
-    private static final String idRegex="^[a-zA-Z0-9]{6,12}$";
-    private static final String passRegex="^[a-zA-Z0-9]{6,12}$";
-    private static final String nameRegex="[a-zA-Z]{4,15}";
-    private static final String phoneRegex="(0\\d{9}|84\\d{9})";
-    private static final String emailRegex="^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$";
+    private static final String idRegex="^[\\d\\w]{6,12}$";
+    private static final String passRegex= "^[\\d\\w]{6,12}$";
+    private static final String nameRegex= "^[A-Za-z]{4,15}$";
+    private static final String phoneRegex= "^[\\d\\w]{6,12}$";
+    private static final String emailRegex= "^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$";
 
     public Regex() {
     }

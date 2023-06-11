@@ -8,72 +8,52 @@ public class CheckInputSystem {
     private final Menu menu=new Menu();
 
     public String inputId() {
-        try {
-            System.out.print(menu.inputID());
-            String id = scanner.nextLine();
-            if (regex.validateId(id))
-                return id;
-            System.out.println(menu.validateFail());
-            return null;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
+            while (true) {
+                System.out.print(menu.inputID());
+                String id = scanner.nextLine();
+                if (regex.validateId(id))
+                    return id;
+                System.out.println("6-12 ký tự có chữ và số ");
+            }
     }
 
     public String inputPass() {
-        try {
+        while (true){
             System.out.print(menu.inputPass());
             String pass = scanner.nextLine();
             if (regex.validatePass(pass))
                 return pass;
-            System.out.println(menu.validateFail());
-            return null;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
+            System.out.println("6-12 ký tự có chữ và số ");}
     }
 
     public String inputName() {
-        try {
+        while (true){
             System.out.print(menu.inputFullName());
             String pass = scanner.nextLine();
             if (regex.validatePass(pass))
                 return pass;
-            System.out.println(menu.validateFail());
-            return null;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
+            System.out.println("4-15 ký tự chỉ có chữ");}
         }
-    }
+
 
     public String inputPhone() {
-        try {
+        while (true){
             System.out.print(menu.inputPhone());
             String phone = scanner.nextLine();
             if (regex.validatePhone(phone))
                 return phone;
-            System.out.println(menu.validateFail());
-            return null;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
+            System.out.println("Đầu 0 hoặc 84 kèm 9 chữ số");
         }
     }
 
     public String inputEmail() {
-        try {
+        while (true){
             System.out.print(menu.inputEmail());
             String mail = scanner.nextLine();
             if (regex.validateEmail(mail))
                 return mail;
-            System.out.println(menu.validateFail());
-            return null;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
+            System.out.println("cú pháp xxx@xxx.xxx");
+
         }
     }
 

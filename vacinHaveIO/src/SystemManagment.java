@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class SystemManagment {
+import java.util.Arrays;
+public class SystemManagment {
+private Custormer[] list;
+
+    SystemManagment() {
+    }
+ public void input(){}
 }

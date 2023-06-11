@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7959720-655a-40f4-821e-3872cff0b59d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/bt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/bt/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/bt/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/bt/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/bt/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/bt/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/bt/src/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/bt/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/out/production/bt/LinkedList$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/out/production/bt/LinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/bt/out/production/bt/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/src/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/src/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/src/MyListE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/src/MyListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/src/TestMyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt10/th/th/th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/bt/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/bt/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/bt/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/bt/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/bt/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/bt/bt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/bt/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/bt/src/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/bt/src/TreeMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/bt11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/src/GenericStackClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/src/LinkedListQueueClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/src/MyGenericStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/src/MyLinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/src/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt11/th/th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt12/bt/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt12/bt/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt12/bt/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt12/bt/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt12/bt/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt12/bt/bt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt12/bt/src/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt14/th/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt14/th/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt14/th/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt14/th/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt14/th/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt14/th/src/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt14/th/src/BubbleSortByStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt14/th/src/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt14/th/th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WriteDataWithAutoClose.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt4/.idea/bt4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt4/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt5/src/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt5/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt5/src/TestStaticProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt5/src/thStaticMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/CircleComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/Comparable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/ComparableCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/Comparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/th1/AbstractAndInterfaceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/th1/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/th1/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/th1/Chicken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/th1/Edible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/th1/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/th1/Orange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/src/th1/Tiger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bt6/th/th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/bttlop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/dayMonthYear/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/dayMonthYear/calcul.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/dayMonthYear/calculTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/quanLyHS/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/quanLyHS/ManagentStuden.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/quanLyHS/Studen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/quanLyNV/FullTime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/quanLyNV/List.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/quanLyNV/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/quanLyNV/PartTime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/quanLyNV/Staff.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/untitled/src/dayMonthYear/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/untitled/src/dayMonthYear/calcul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bttlop/untitled/src/dayMonthYear/calculTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../cloneCodegym/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../cloneCodegym/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../cloneCodegym/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../cloneCodegym/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../cloneCodegym/apj-calculator" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../cloneCodegym/cloneCodegym.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../preForAfterExam/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../preForAfterExam/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../preForAfterExam/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../preForAfterExam/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../preForAfterExam/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../preForAfterExam/preForAfterExam.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../preForAfterExam/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../preForAfterExam/src/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../preForAfterExam/src/SystemManamentProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vacinHaveIO/src/Custormer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vacinHaveIO/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vacinHaveIO/src/SystemManagment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vacinHaveIO/src/Vaccine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bt1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bt1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bt4/bt/src/bt3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bt4/bt/src/bt3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bttlop/untitled/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bttlop/untitled/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyHS/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyHS/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyHS/ManagentStuden.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyHS/ManagentStuden.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyHS/Studen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyHS/Studen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyNV/FullTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyNV/FullTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyNV/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyNV/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyNV/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyNV/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyNV/PartTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyNV/PartTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyNV/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bttlop/untitled/src/quanLyNV/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bttlop/out/production/bttlop/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/out/production/test/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bt10/bt/bt/bt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/test.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2QHOnwxGUbDVj3ekqQi6BKAdNnK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Module 2/bt16/th/src",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7959720-655a-40f4-821e-3872cff0b59d" name="Changes" comment="" />
+      <created>1685007210496</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685007210496</updated>
+      <workItem from="1685007211744" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

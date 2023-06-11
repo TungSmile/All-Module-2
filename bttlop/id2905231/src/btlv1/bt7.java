@@ -1,3 +1,5 @@
+package btlv1;
+
 import java.util.Scanner;
 
 public class bt7 {

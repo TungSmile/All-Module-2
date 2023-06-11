@@ -1,3 +1,5 @@
+package btlv1;
+
 public class bt10 {
     public static void main(String[] args) {
         for (int number = 0; number < 1000; number++) {
